@@ -922,6 +922,12 @@ template {
   font-weight: bold;
   font-style: normal; }
 
+@font-face {
+  font-family: 'playfair-bold';
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
 /*
 * TABLE OF CONTENTS
 *
@@ -2096,7 +2102,12 @@ p {
 * tag
 */
 .site-header {
-  background-color: #FF6600; }
+  background-color: #FF6600;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; }
   .site-header div[class^="col"] {
     padding: 0; }
   .site-header .aside-header {
@@ -2122,7 +2133,7 @@ p {
       .site-header .go-back {
         width: 90px;
         height: 90px; } }
-    .site-header .go-back:hover {
+    .site-header .go-back.has-touched, .site-header .go-back:hover {
       background-color: #cc5200; }
     @media (max-width: 767.98px) {
       .site-header .go-back i {
@@ -2176,6 +2187,7 @@ p {
       align-items: center; }
 
 .article {
+  margin-top: 90px;
   /*> header*/
   /*> sapo*/
   /*> body*/ }
@@ -2189,7 +2201,8 @@ p {
   .article__header {
     font-size: 2.4rem;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: playfair-bold, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
     .article__header::after {
       display: block;
       clear: both;
@@ -2207,7 +2220,7 @@ p {
       clear: both;
       content: ""; }
     .article__body p,
-    .article__body div,
+    .article__body .body-text,
     .article__body h3,
     .article__body h4,
     .article__body h5 {
@@ -2263,6 +2276,37 @@ p {
         width: 61rem;
         height: 32rem;
         max-width: 100%; }
+  .article .group-img-1 {
+    display: flex;
+    justify-content: space-between; }
+    .article .group-img-1 p {
+      flex-grow: 1; }
+      .article .group-img-1 p img {
+        border: 1px solid #979797;
+        border-left: none;
+        width: 100%; }
+      .article .group-img-1 p:first-child {
+        flex-grow: 2; }
+        .article .group-img-1 p:first-child img {
+          border-left: 1px solid #979797; }
+  .article .group-img-2 {
+    display: flex;
+    justify-content: space-between; }
+    .article .group-img-2 p {
+      width: 25%; }
+      .article .group-img-2 p img {
+        border: 1px solid #979797;
+        border-left: none;
+        width: 100%; }
+      .article .group-img-2 p:first-child {
+        width: 50%; }
+        .article .group-img-2 p:first-child img {
+          border-left: 1px solid #979797; }
+  .article [class*="group-img"] + .caption {
+    display: block;
+    font-style: italic;
+    margin-top: 1rem;
+    text-align: center; }
 
 .article-control {
   display: flex;
@@ -2316,5 +2360,37 @@ p {
   @media (max-width: 991.98px) {
     .article-control .sub-title {
       display: none; } }
+
+.menu-verticle {
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  overflow: scroll;
+  position: fixed;
+  top: 90px;
+  background-color: #fff;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  padding-bottom: 90px; }
+  .menu-verticle li a {
+    display: block;
+    padding: 15px;
+    border-top: 1px solid #adb5bd;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .menu-verticle li:first-child a {
+    border-top: none; }
+  .menu-verticle.is-active {
+    left: 0px;
+    transition: left .2s linear; }
+
+.mask-is-open:before {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=../maps/kienthuc-emagazine.css.map */
