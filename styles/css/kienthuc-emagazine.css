@@ -2126,13 +2126,13 @@ p {
     display: flex;
     align-items: center;
     height: 50px;
-    padding: 0 10px !important;
+    padding: 0 10px 0 5px !important;
     justify-content: space-between; }
     @media (min-width: 768px) {
       .site-header .main-header {
         height: 90px; } }
   .site-header .go-back {
-    width: 50px;
+    width: 55px;
     height: 50px;
     border: none; }
     @media (min-width: 768px) {
@@ -2244,7 +2244,7 @@ p {
     .article__body h3,
     .article__body h4,
     .article__body h5 {
-      margin-top: 1rem;
+      margin-top: 3rem;
       font-size: 1.4rem; }
       @media (min-width: 576px) {
         .article__body p,
@@ -2263,7 +2263,7 @@ p {
       margin: auto;
       max-width: 40rem; }
     .article__body .body-text {
-      margin: 1.5rem auto 0;
+      margin: 3rem auto 0;
       justify-content: space-between; }
     .article__body .body-author {
       font-weight: bold;
@@ -2360,7 +2360,7 @@ p {
       .article-control .next i {
         width: 32px;
         height: 32px;
-        background-size: 33px 333px; } }
+        background-size: 33px 666px; } }
     .article-control .prev:hover,
     .article-control .next:hover {
       background-color: rgba(0, 0, 0, 0.05); }
@@ -2408,11 +2408,14 @@ p {
   height: 100%;
   overflow: scroll;
   position: fixed;
-  top: 90px;
+  top: 50px;
   background-color: #fff;
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
   z-index: 100;
   padding-bottom: 90px; }
+  @media (min-width: 992px) {
+    .menu-verticle {
+      top: 90px; } }
   .menu-verticle li a {
     display: block;
     padding: 15px;
