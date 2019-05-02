@@ -141,7 +141,7 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #2FA1B3;
+    color: #FF6600;
     text-decoration: none; }
 
 a:not([href]):not([tabindex]) {
@@ -2224,6 +2224,13 @@ p {
     @media (min-width: 576px) {
       .article__header {
         font-size: 2.4rem; } }
+    .article__header small {
+      font-family: roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      text-transform: initial;
+      font-weight: bold;
+      display: block;
+      color: #FF6600;
+      margin-bottom: 5px; }
   .article__sapo {
     font-size: 1.4rem;
     margin-top: 1rem;
