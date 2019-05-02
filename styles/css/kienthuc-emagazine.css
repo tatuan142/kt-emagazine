@@ -2158,27 +2158,32 @@ p {
         width: 205px;
         height: 50px; } }
   .site-header .topic-title {
-    font-size: 2.4rem; }
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: playfair-bold, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: uppercase; }
     .site-header .topic-title a {
       color: #fff; }
     @media (max-width: 767.98px) {
       .site-header .topic-title {
         display: none; } }
-  .site-header .group-link a {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 3px;
-    color: #fff; }
-    @media (min-width: 768px) {
-      .site-header .group-link a {
-        margin: 0 20px; } }
-  .site-header .group-link a:hover,
-  .site-header .group-link .active {
-    background-color: rgba(0, 0, 0, 0.1); }
-  @media (max-width: 767.98px) {
-    .site-header .group-link {
-      width: 120px;
-      display: none; } }
+  .site-header .group-link {
+    margin-top: 8px; }
+    .site-header .group-link a {
+      display: inline-block;
+      padding: 3px 20px;
+      border-radius: 3px;
+      color: #fff; }
+      @media (min-width: 768px) {
+        .site-header .group-link a {
+          margin: 0 20px; } }
+    .site-header .group-link a:hover,
+    .site-header .group-link .active {
+      background-color: rgba(0, 0, 0, 0.1); }
+    @media (max-width: 767.98px) {
+      .site-header .group-link {
+        width: 120px;
+        display: none; } }
   .site-header .social-comment {
     margin-left: 10px;
     width: 100px;
