@@ -2119,7 +2119,7 @@ p {
   .site-header .aside-header {
     flex: 0 0 50px;
     font-size: 0; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .site-header .aside-header {
         flex: 0 0 90px; } }
   .site-header .main-header {
@@ -2128,20 +2128,20 @@ p {
     height: 50px;
     padding: 0 10px 0 5px !important;
     justify-content: space-between; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .site-header .main-header {
         height: 90px; } }
   .site-header .go-back {
     width: 55px;
     height: 50px;
     border: none; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .site-header .go-back {
         width: 90px;
         height: 90px; } }
     .site-header .go-back.has-touched, .site-header .go-back:hover {
       background-color: #cc5200; }
-    @media (max-width: 767.98px) {
+    @media (max-width: 991.98px) {
       .site-header .go-back i {
         transform: scale(0.5);
         margin-left: -15px;
@@ -2153,7 +2153,7 @@ p {
     margin-right: 10px;
     margin-top: 5px;
     background: url(../img/kt-logo.png) 0 0 no-repeat; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .site-header .logo {
         width: 205px;
         height: 50px; } }
@@ -2167,6 +2167,9 @@ p {
     @media (max-width: 767.98px) {
       .site-header .topic-title {
         display: none; } }
+  @media (max-width: 1199.98px) {
+    .site-header .group-title {
+      display: none; } }
   .site-header .group-link {
     margin-top: 8px; }
     .site-header .group-link a {
@@ -2180,10 +2183,9 @@ p {
     .site-header .group-link a:hover,
     .site-header .group-link .active {
       background-color: rgba(0, 0, 0, 0.1); }
-    @media (max-width: 767.98px) {
+    @media (max-width: 991.98px) {
       .site-header .group-link {
-        width: 120px;
-        display: none; } }
+        width: 120px; } }
   .site-header .social-comment {
     margin-left: 10px;
     width: 100px;
@@ -2208,7 +2210,7 @@ p {
   /*> header*/
   /*> sapo*/
   /*> body*/ }
-  @media (min-width: 576px) {
+  @media (min-width: 992px) {
     .article {
       margin-top: 90px; } }
   .article::after {
