@@ -934,6 +934,10 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'bungee-inline';
+  src: url("../fonts/Bungee_Shade/BungeeShade-Regular.ttf") format("truetype"); }
+
 /*
 * TABLE OF CONTENTS
 *
@@ -2235,7 +2239,9 @@ p {
       content: ""; }
     @media (min-width: 576px) {
       .article__header {
-        font-size: 2.4rem; } }
+        /*!*/
+        font-size: 3.2rem;
+        line-height: 4.2rem; } }
   .article .body-author {
     font-weight: bold;
     text-align: right;
@@ -2247,7 +2253,10 @@ p {
     font-weight: bold; }
     @media (min-width: 576px) {
       .article__sapo {
-        margin-top: 3rem; } }
+        margin-top: 3rem;
+        /*!*/
+        font-size: 1.8rem;
+        line-height: 2.6rem; } }
   .article__body {
     overflow: hidden;
     overflow-wrap: break-word;
@@ -2269,7 +2278,10 @@ p {
         .article__body h3,
         .article__body h4,
         .article__body h5 {
-          margin-top: 3rem; } }
+          margin-top: 3rem;
+          /*!*/
+          font-size: 1.8rem;
+          line-height: 2.6rem; } }
     .article__body ins {
       text-decoration: none; }
     .article__body img {
@@ -2280,12 +2292,15 @@ p {
       margin: auto;
       max-width: 40rem; }
     .article__body .sub-heading {
-      font-family: roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      font-weight: bold;
+      font-family: bungee-inline, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-weight: normal;
       display: block;
-      color: #FF6600;
-      margin-bottom: 10px;
-      font-size: 2rem; }
+      margin-bottom: 10px; }
+      @media (min-width: 576px) {
+        .article__body .sub-heading {
+          /*!*/
+          font-size: 3rem;
+          line-height: 5rem; } }
     .article__body .body-text {
       margin: 3rem auto 0;
       justify-content: space-between; }
