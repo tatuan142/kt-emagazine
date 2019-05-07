@@ -2299,8 +2299,8 @@ p {
       @media (min-width: 576px) {
         .article__body .sub-heading {
           /*!*/
-          font-size: 3rem;
-          line-height: 5rem; } }
+          font-size: 5rem;
+          line-height: 7rem; } }
     .article__body .body-text {
       margin: 3rem auto 0;
       justify-content: space-between; }
