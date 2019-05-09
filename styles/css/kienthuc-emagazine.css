@@ -60,7 +60,7 @@ body {
   line-height: 1.4;
   color: #212529;
   text-align: left;
-  background-color: #FFF0E6; }
+  background-color: #ffe1cd; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -884,7 +884,7 @@ template {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #FFF0E6;
+  background-color: #ffe1cd;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
@@ -2299,8 +2299,8 @@ p {
       @media (min-width: 576px) {
         .article__body .sub-heading {
           /*!*/
-          font-size: 5rem;
-          line-height: 7rem; } }
+          font-size: 6rem;
+          line-height: 8rem; } }
     .article__body .body-text {
       margin: 3rem auto 0;
       justify-content: space-between; }
