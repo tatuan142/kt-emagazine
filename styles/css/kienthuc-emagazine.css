@@ -7894,6 +7894,8 @@ p {
     float: right; }
   .article.inforgraphic .article__body .col .body-image-fullSize {
     text-align: center; }
+  .article.inforgraphic .article__body .col .body-image.fullsize {
+    max-width: inherit !important; }
   .article.inforgraphic .article__body .col .group-img-fullsize {
     display: block; }
     .article.inforgraphic .article__body .col .group-img-fullsize .style-1 {
