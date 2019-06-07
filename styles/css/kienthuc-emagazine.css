@@ -7197,6 +7197,34 @@ p {
 *    -> timeline block
 * tag
 */
+.clearfix {
+  clear: both; }
+
+.article__comment .main-input p.note {
+  float: none; }
+
+.modal-lg {
+  width: 322px; }
+
+div.modal-dialog.modal-lg div.modal-content {
+  padding: 10px;
+  width: inherit !important; }
+
+div.modal-dialog.modal-lg div.modal-content:first-child div {
+  width: 305px; }
+
+.modal-dialog.modal-lg .modal-content .form-group {
+  margin-bottom: 15px; }
+
+.modal-dialog.modal-lg .modal-content .form-group label {
+  margin-bottom: 5px; }
+
+body.modal-open {
+  overflow: inherit; }
+
+.modal-lg .form-control {
+  display: inline-block; }
+
 .site-header {
   background-color: #FF6600;
   position: fixed;
@@ -7930,6 +7958,38 @@ p {
       margin-top: 1rem;
       text-align: center;
       color: #999; } }
+
+@media (min-width: 992px) {
+  .site-footer {
+    border-top: 1px solid #999;
+    padding-top: 30px;
+    margin-top: 30px;
+    background-color: white;
+    font-size: 13px; }
+    .site-footer .container {
+      width: 980px;
+      max-width: inherit; }
+      .site-footer .container .contact {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between; }
+        .site-footer .container .contact p {
+          margin-top: 5px; }
+        .site-footer .container .contact > .floatleft:nth-child(1) {
+          width: 60%; }
+        .site-footer .container .contact > .floatleft:nth-child(2) {
+          width: 40%;
+          text-align: right; } }
+
+@media (max-width: 991.98px) {
+  .site-footer {
+    border-top: 1px solid #999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    background-color: white;
+    font-size: 13px;
+    text-align: center; } }
 
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 /*
