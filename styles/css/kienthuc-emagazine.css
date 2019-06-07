@@ -7306,14 +7306,14 @@ body.modal-open {
         width: 120px; } }
   .site-header .social-comment {
     margin-left: 10px;
-    width: 140px;
+    width: 100px;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center; }
     @media (min-width: 768px) {
       .site-header .social-comment {
-        width: 160px; } }
+        width: 100px; } }
     .site-header .social-comment a {
       width: 30px;
       height: 30px;
@@ -7344,7 +7344,6 @@ body.modal-open {
       .article__cover {
         margin-bottom: 3rem; } }
   .article__header {
-    font-size: 1.8rem;
     color: black;
     text-align: center;
     text-transform: uppercase;
@@ -7353,8 +7352,10 @@ body.modal-open {
       display: block;
       clear: both;
       content: ""; }
+    .article__header h1 {
+      font-size: 1.8rem; }
     @media (min-width: 576px) {
-      .article__header {
+      .article__header h1 {
         /*!*/
         font-size: 3.2rem;
         line-height: 4.2rem; } }
